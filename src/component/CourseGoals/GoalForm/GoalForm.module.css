@@ -1,0 +1,41 @@
+.form-control {
+    margin: 0.5rem 0;
+  }
+  
+  .form-control label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  
+  .form-control input {
+    display: block;
+    width: 100%;
+    border: 1px solid #ccc;
+    font: inherit;
+    line-height: 1.5rem;
+    padding: 0 0.25rem;
+  }
+  
+  .form-control input:focus {
+    outline: none;
+    background: #fad0ec;
+    border-color: #8b005d;
+  }
+
+  /* .form-control.invalid 둘다 있을때 적용 시 공백없이 작성 */
+  .form-control.invalid input{
+    border-color: red;
+    background-color: #f29ff8;
+  }
+
+  .form-control.invalid label {
+    color: red;
+  }
+  
+  @media (min-width: 768px) {
+    .form-control label {
+      text-align: left;
+    }
+  };
